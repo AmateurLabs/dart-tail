@@ -121,9 +121,8 @@ class Action {
   bool _cVal = false;
   bool _nVal = false;
   
-  Action(Tail tail, [List<int> codes]) {
+  Action([List<int> codes]) {
     _codes.addAll(codes);
-    tail.bind(this);
   }
   
   void bind(int code) {
